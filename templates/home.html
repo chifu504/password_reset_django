@@ -1,0 +1,11 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block title %}<title>login</title>{% endblock title %}
+{% block content %}
+
+{% if user.is_authenticated %}
+<h2>bienvenido {{user.email}}</h2>
+{% else %}
+<h2>registrate</h2>
+{% endif %}
+{% endblock content %}
